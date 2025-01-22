@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Dog: Adopt, Donate, Volunteer</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.77/dist/shoelace.js"></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Good Dog</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#adoptable-pets">Adopt</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <h1>Welcome to Good Dog</h1>
+      <p>Connecting pets with loving homes.</p>
+      <button class="cta-button">Learn More</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <h2>About Us</h2>
+      <p>Good Dog is a nonprofit organization dedicated to rehabilitating and rehoming pets with love and care.</p>
+    </section>
+
+    <!-- Adoptable Pets Section -->
+    <section id="adoptable-pets" class="section pets">
+      <h2>Meet Our Pets</h2>
+      <div class="carousel">
+        <img src="assets/pet1.jpg" alt="Pet 1">
+        <img src="assets/pet2.jpg" alt="Pet 2">
+        <img src="assets/pet3.jpg" alt="Pet 3">
+      </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="section donate">
+      <h2>Support Us</h2>
+      <p>Your donations make our work possible. Help us reach our goal!</p>
+      <sl-progress-bar value="60"></sl-progress-bar>
+      <button class="donate-button">Donate Now</button>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="section volunteer">
+      <h2>Volunteer with Us</h2>
+      <p>Join our team and make a difference in the lives of these animals.</p>
+      <button class="cta-button">Get Involved</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <button id="toggle-borders" class="toggle-button">Toggle Borders</button>
+
+  <footer>
+    <p>&copy; 2025 Good Dog. All rights reserved.</p>
+  </footer>
+</body>
